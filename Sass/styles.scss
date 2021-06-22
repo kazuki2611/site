@@ -1,0 +1,166 @@
+@import "foundation/reset";
+@import "foundation/mixin";
+@import "foundation/variable.scss";
+@import "foundation/base";
+
+@import "layout/header";
+
+@import "object/project/hamburger";
+@import "object/project/dropdown-menu";
+
+@import "object/component/dropdown-menu__item";
+@import "object/project/hero";
+@import "object/component/headline";
+@import "object/component/button";
+
+@import "object/project/service";
+@import "object/utility/margin";
+
+@import "object/component/hero__contente";
+.p-prace {
+  width: 100%;
+  background-color: #eefbfb;
+  margin-top: 100px;
+  padding-top: 100px;
+  height: 100%;
+}
+.p-table {
+  height: 100%;
+
+  background-color: #fff;
+  margin: 100px auto 0 auto;
+  width: 90%;
+
+  border-collapse: collapse;
+  color: $font-color;
+  box-shadow: 0px 3px 6px #00000029;
+
+  @include breakpoint(pc) {
+    margin-top: 50px;
+  }
+  tr,
+  td {
+    border-bottom: 1px solid #e5e5e5;
+    height: 100%;
+  }
+  th {
+    padding: 30px 0;
+    border-bottom: 1px dashed #e5e5e5;
+    width: 100%;
+    height: 50%;
+    display: block;
+    font-size: 16px;
+    @include breakpoint(tablet) {
+      width: 30%;
+      padding: 28px 105px 27px 30px;
+    }
+    @include breakpoint(pc) {
+      text-align: left;
+      padding: 28px 0px 27px 30px;
+    }
+  }
+
+  td {
+    padding: 30px 0;
+    display: block;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    @include breakpoint(tablet) {
+      padding: 28px 405px 27px 30px;
+    }
+  }
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.p-faq {
+  margin-top: 50px;
+  width: 100%;
+  &__wrap {
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &__list {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+.p-faq__wrap {
+  .c-faq__titile {
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+    cursor: pointer;
+    display: block;
+  }
+  .c-faq__text {
+    border: 1px solid #e5e5e5;
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: left;
+    display: none;
+  }
+}
+.p-blog {
+  width: 100%;
+  background-color: #eefbfb;
+  padding-bottom: 30px;
+
+  &__box {
+    text-align: center;
+
+    background-color: #fff;
+    width: 90%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+    box-shadow: 0px 3px 6px #00000029;
+  }
+}
+.c-blog__pictuer {
+  background-size: cover;
+  height: 70%;
+  padding-top: 30px;
+}
+.c-blog__text {
+  margin: 0 auto;
+  height: 30%;
+  width: 90%;
+  font-size: 14px;
+  text-align: left;
+}
+.u-date {
+  text-align: initial;
+  padding-top: 10%;
+  padding-left: 70%;
+  padding-bottom: 50px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 500px;
+  margin-right: 20px;
+
+  .swiper-wrapper {
+    width: 100%;
+  }
+  .swiper-slide {
+    border: 1px solid #dddddd;
+    height: 403px;
+    box-sizing: border-box;
+    display: block;
+    width: 400px;
+
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 0;
+    img {
+      height: 200px;
+      width: 100%;
+    }
+  }
+}

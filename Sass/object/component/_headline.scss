@@ -1,0 +1,30 @@
+.c-headline {
+  &__1 {
+    width: 80%;
+    font-size: 29px;
+    margin: 0 auto;
+    text-align: center;
+    span {
+      color: #3ba6c9;
+      font-size: 16px;
+      display: block;
+      margin-top: 20px;
+    }
+  }
+  &__2 {
+    margin-top: 30px;
+    font-size: 28px;
+  }
+  &__3 {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 24px;
+  }
+  &__4 {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 36px;
+    padding-bottom: 50px;
+  }
+}

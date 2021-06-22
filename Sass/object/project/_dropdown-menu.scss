@@ -1,0 +1,32 @@
+.p-dropdown-menu {
+  width: 100%;
+  text-align: center;
+background-color: #fff;
+  
+  &__list {
+    a {
+      font-size: 20px;
+      color: rgba(0, 0, 0, 0.55);
+      text-decoration: none;
+      &:hover {
+        color: #000;
+      }
+      
+    }
+    
+    // opacity: 0;
+    top: 50%;
+    // visibility: hidden;
+    // transition: 0.5s;
+    color: black;
+    display: none;
+    &.is-open {
+    
+      top: 100%;
+  
+      // visibility: visible;
+      
+      // opacity: 1;
+    }
+  }
+}
