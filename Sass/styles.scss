@@ -144,17 +144,18 @@ body {
 .swiper-container {
   width: 100%;
   height: 500px;
-  margin-right: 20px;
 
   .swiper-wrapper {
     width: 100%;
+    
   }
   .swiper-slide {
     border: 1px solid #dddddd;
     height: 403px;
     box-sizing: border-box;
     display: block;
-    width: 400px;
+   width: 400px;
+   margin-right: 20px;
 
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 0;
