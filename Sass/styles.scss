@@ -4,6 +4,8 @@
 @import "foundation/base";
 
 @import "layout/header";
+@import "layout/main";
+@import "layout/header";
 
 @import "object/project/hamburger";
 @import "object/project/dropdown-menu";
@@ -145,23 +147,131 @@ body {
   width: 100%;
   height: 500px;
 
-  .swiper-wrapper {
-    width: 100%;
-    
-  }
   .swiper-slide {
     border: 1px solid #dddddd;
     height: 403px;
     box-sizing: border-box;
     display: block;
-   width: 400px;
-   margin-right: 20px;
+    width: 322px;
+    margin-right: 20px;
 
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 0;
+    h1 {
+      padding-top: 23px;
+      font-size: 16px;
+      padding-left: 18px;
+    }
+    p {
+      padding-top: 32px;
+      padding-left: 18px;
+    }
     img {
+      object-fit: cover;
       height: 200px;
       width: 100%;
     }
+  }
+}
+.p-contact {
+  background: linear-gradient(90deg, #05a5fa 0%, #63fbd7 100%);
+  width: 100%;
+  font-weight: bold;
+  padding-bottom: 30px;
+
+  h1 {
+    padding-top: 72px;
+  }
+  span {
+    color: #fff;
+  }
+  &__form {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #fff;
+    padding: 39px 63px 0 63px;
+
+    &__button {
+      text-align: center;
+    }
+    .c-button {
+      padding: 10px 50px;
+      margin-top: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+  }
+}
+.c-form__required {
+  color: #fff;
+  background-color: #0c449b;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 5px 16px;
+  margin-left: 20px;
+}
+.c-contact__text {
+  text-align: center;
+  color: #fff;
+  margin-top: 42px;
+}
+.u-color {
+  color: #fff;
+}
+label {
+  display: block;
+  margin-top: 25px;
+}
+.c-form__input {
+  border-radius: 3px;
+  width: 80%;
+  background-color: #eefbfb;
+  display: block;
+  height: 43px;
+  margin-top: 24px;
+}
+.u-size {
+  height: 179px;
+  width: 100%;
+}
+.c-checkbox {
+  display: flex;
+  justify-content: center;
+  input {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #707070;
+    margin-right: 10px;
+  }
+}
+.l-footer {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  h1 {
+    font-size: 24px;
+  }
+  ul {
+    font-weight: bold;
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    
+
+    li {
+      font-size: 14px;
+      list-style: none;
+      padding-left: 20px;
+    }
+  }
+  p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #333333;
   }
 }

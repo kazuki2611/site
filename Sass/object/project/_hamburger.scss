@@ -6,7 +6,9 @@
   height: 50px;
   cursor: pointer;
   display: block;
-
+@include breakpoint (pc) {
+  display: none;
+}
   span {
     width: 30px;
     height: 2px;
