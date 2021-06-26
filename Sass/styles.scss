@@ -78,6 +78,8 @@
 
 body {
   font-family: "Noto Sans JP", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 .p-faq {
   margin-top: 50px;
@@ -274,4 +276,17 @@ label {
     font-size: 14px;
     color: #333333;
   }
+}
+.l-header__wrap {
+  
+  @include breakpoint (pc) {
+align-items: center;
+    display: flex;
+    max-width: 1022px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.u-text {
+  text-align: left;
 }

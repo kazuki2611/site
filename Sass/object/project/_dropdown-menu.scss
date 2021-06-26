@@ -2,12 +2,22 @@
   width: 100%;
   text-align: center;
   background-color: #fff;
+  @include breakpoint(pc) {
+    height: 30px;
+    
 
+  }
+ 
   &__list {
+    @include breakpoint(pc) {
+    }
     a {
       font-size: 20px;
       color: rgba(0, 0, 0, 0.55);
       text-decoration: none;
+      @include breakpoint(pc) {
+        color: #333333;
+      }
       &:hover {
         color: #000;
       }
@@ -19,9 +29,9 @@
     // transition: 0.5s;
     color: black;
     display: none;
-    @include breakpoint (pc) {
-   display: flex;
-     }
+    @include breakpoint(pc) {
+      display: flex;
+    }
     &.is-open {
       top: 100%;
 

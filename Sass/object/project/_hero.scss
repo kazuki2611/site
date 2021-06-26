@@ -1,19 +1,43 @@
 .p-hero {
   text-align: left;
-  background: url(../image/maru.png);
-  background-size: cover;
+
   height: 674px;
   width: 100%;
-  padding-top: 100px;
-&__botton {
-  width: 155px;
-  height: 37px;
-  border-radius: 10px;
-  margin-top: 40px;
-  margin-left: 10%;
-}
+  padding-top: 200px;
+  @include breakpoint(pc) {
+    max-width: 1022px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &__botton {
+    width: 155px;
+    height: 37px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 10%;
+    @include breakpoint(pc) {
+      margin: 51px 0 0 0;
+    }
+  }
+  h1 {
+    @include breakpoint(pc) {
+      padding: 168px 0 38px 0;
+    }
+  }
   p {
     width: 80%;
     margin: 0 auto;
+    margin-top: 20px;
+    @include breakpoint(pc) {
+      margin: 0;
+    }
+  }
+  img {
+    @include breakpoint(pc) {
+      position: absolute;
+      top: 30%;
+      right: 15%;
+    }
   }
 }

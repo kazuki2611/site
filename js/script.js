@@ -21,5 +21,8 @@ jQuery(function ($) {
 
 
     });
+    $(window).resize(function() {
+        $(".p-dropdown-menu__list").css('display','');
+    });
 });
 

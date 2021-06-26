@@ -4,12 +4,16 @@
     
     margin: 0 auto;
     text-align: center;
+    @include breakpoint (pc) {
+      margin: 0;
+    }
     span {
       color: #3ba6c9;
       font-size: 16px;
       display: block;
       margin-top: 20px;
     }
+
   }
   &__2 {
     margin-top: 30px;
