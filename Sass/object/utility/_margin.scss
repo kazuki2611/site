@@ -1,3 +1,6 @@
 .u-margin {
   margin-top: 120px;
+  @include breakpoint (pc) {
+    margin-top: 94px;
+  }
 }
