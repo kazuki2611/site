@@ -4,6 +4,8 @@
   background-color: #fff;
   position: fixed;
   z-index: 1000;
+  color: #333333;
+  line-height: 1.2;
   @include breakpoint(pc) {
     display: flex;
     align-items: center;
@@ -11,6 +13,7 @@
     font-weight: bold;
   }
   .c-button__nav {
+    scroll-behavior: smooth;
     display: none;
     @include breakpoint(pc) {
       display: block;
@@ -45,9 +48,13 @@
   justify-content: space-between;
   height: 94px;
   width: 100%;
-  max-width: 1022px;
+  @include breakpoint (pc) {
+
+    max-width: 1022px;
+  }
 }
 .l-header__logo {
   width: 47px;
   height: 47px;
+  object-fit: cover;
 }

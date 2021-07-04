@@ -1,0 +1,15 @@
+.c-form__input {
+  border-radius: 3px;
+  padding: 0 10px;
+  border-radius: 3px;
+  width: 80%;
+  background-color: #eefbfb;
+  display: block;
+  height: 43px;
+  margin-top: 24px;
+  &__textarea {
+    @extend.c-form__input;
+    height: 179px;
+    width:100%;
+  }
+}

@@ -27,7 +27,7 @@
     padding: 30px 0;
     border-bottom: 1px dashed #e5e5e5;
     width: 100%;
-
+    line-height: 1.75;
     display: block;
     font-size: 16px;
     @include breakpoint(pc) {
@@ -38,6 +38,7 @@
     }
   }
   td {
+    line-height: 1.75;
     padding: 30px 0;
     display: block;
     height: 50%;

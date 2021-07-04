@@ -1,0 +1,13 @@
+.c-checkbox {
+  display: flex;
+  justify-content: center;
+  color: #333333;
+  align-items: center;
+  input {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #707070;
+    margin-right: 10px;
+  }
+}

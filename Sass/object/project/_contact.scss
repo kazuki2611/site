@@ -1,0 +1,41 @@
+.p-contact {
+  background: linear-gradient(90deg, #05a5fa 0%, #63fbd7 100%);
+  width: 100%;
+  font-weight: bold;
+  padding-bottom: 30px;
+
+  h1 {
+    text-align: center;
+    padding-top: 72px;
+  }
+  span {
+    color: #fff;
+  }
+  &__form {
+    width: 90%;
+    max-width: 908px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #fff;
+    padding: 39px 63px 35px 63px;
+    margin-bottom: 70px;
+
+    .c-button {
+      padding: 10px 50px;
+      margin: 0 auto;
+      border-radius: 10px;
+      margin-top: 33px;
+      margin-bottom: 35px;
+    }
+  }
+}
+input {
+  display: block;
+  margin: 12px 0;
+}
+label {
+  display: block;
+  margin-top: 25px;
+  color: #333333;
+  appearance: none;
+}

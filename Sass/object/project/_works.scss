@@ -1,0 +1,11 @@
+.p-works {
+  h1 {
+    text-align: center;
+    @include breakpoint(pc) {
+      padding-top: 65px;
+    }
+  }
+  span {
+    padding-bottom: 69px;
+  }
+}

@@ -1,0 +1,24 @@
+.c-blog__text {
+  font-weight: bold;
+  margin: 0 auto;
+  color: #333333;
+  height: 127px;
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+  position: relative;
+  padding: 19px 30px 0 18px;
+  line-height: 1.4;
+  @include breakpoint(tablet) {
+    height: 150px;
+  }
+  @include breakpoint(pc) {
+    font-size: 18px;
+  }
+  time {
+    color: #444444;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+}

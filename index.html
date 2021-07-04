@@ -7,15 +7,18 @@
   <title>Shogo</title>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="Sass/styles.scss">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./js/script.js"></script>
   <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+
   <link rel="icon" href="./image/Pink and Purple Events & party Entertainment Logo-1.png" />
   <script src="./js/hamburger.js"></script>
   <script src="./js/swiper.min.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -51,7 +54,7 @@
 
           </li>
           <li class="c-dropdown-menu__item">
-            <a href="#CONTACT">
+            <a href="#contact">
               お問い合わせ
             </a>
 
@@ -59,13 +62,17 @@
         </ul>
       </nav>
       <button class="c-button c-button__nav">
-        お問い合わせ
+        <a href="#contact">
+
+          お問い合わせ
+        </a>
       </button>
 
     </div>
   </header>
   <main class="l-main">
-    <div class="p-hero">
+
+    <div class="p-hero ">
       <h1 class="c-headline__1 u-text">
         コーディングの手間を<br>
         最小に、デザインに注力<br>
@@ -87,17 +94,17 @@
       </button>
       <img src="./image/manager-1.png">
     </div>
-    <section class="p-service">
-      <div class="p-service__wrap">
+    <section id="FEATURES" class="p-service ">
+      <div class="p-service__wrap ">
 
-        <h1 class="c-headline__1">
+        <h1 data-aos="zoom-in-up" data-aos-duration="2000" class="c-headline__1">
           ユアコーディング3つの特徴<span>FEATURE</span>
         </h1>
 
-        <h2 class="c-headline__2">
+        <h2 data-aos="zoom-in-up" data-aos-duration="2000" class="c-headline__2">
           高速コーディング
         </h2>
-        <div class="p-service__contente">
+        <div data-aos="zoom-in-up" data-aos-duration="2000" class="p-service__contente">
 
 
           <img src="./image/cto-1.png">
@@ -117,7 +124,7 @@
           </div>
         </div>
       </div>
-      <div class="p-service__wrap u-margin">
+      <div data-aos="zoom-in-up" data-aos-duration="2000" class="p-service__wrap u-margin">
 
 
         <h2 class="c-headline__2">
@@ -145,7 +152,7 @@
         </div>
       </div>
 
-      <div class="p-service__wrap u-margin">
+      <div data-aos="zoom-in-up" data-aos-duration="2000" class="p-service__wrap u-margin">
 
 
         <h2 class="c-headline__2">
@@ -177,45 +184,45 @@
 
 
     </section>
-    <section>
-      <div class="p-prace">
-        <h1 class="c-headline__1">
-          価格<span>PRICE</span>
-        </h1>
-        <table class="p-table">
-          <tr>
-            <th>HTMLコーディングトップページ</th>
-            <td>30.000円〜</td>
-          </tr>
-          <tr>
-            <th>HTMLコーディング下層1ページ</th>
-            <td>10.000円〜</td>
-          </tr>
-          <tr>
-            <th>HTML+WordPressトップページ</th>
-            <td>55.000円〜</td>
-          </tr>
-          <tr>
-            <th>HTML+WordPress下層1ページ</th>
-            <td>15.000円〜</td>
-          </tr>
-        </table>
-        <h4 class="c-headline__4">
-          ＊詳細な価格はページや仕様によって異なります
-        </h4>
-      </div>
+    <section id="PRICE" class="p-prace ">
+
+      <h1 data-aos="zoom-in-up" data-aos-duration="2000" class="c-headline__1">
+        価格<span>PRICE</span>
+      </h1>
+      <table class="p-table" data-aos="zoom-in-up" data-aos-duration="2000">
+        <tr>
+          <th>HTMLコーディングトップページ</th>
+          <td>30.000円〜</td>
+        </tr>
+        <tr>
+          <th>HTMLコーディング下層1ページ</th>
+          <td>10.000円〜</td>
+        </tr>
+        <tr>
+          <th>HTML+WordPressトップページ</th>
+          <td>55.000円〜</td>
+        </tr>
+        <tr>
+          <th>HTML+WordPress下層1ページ</th>
+          <td>15.000円〜</td>
+        </tr>
+      </table>
+      <h4 class="c-headline__4">
+        ＊詳細な価格はページや仕様によって異なります
+      </h4>
+
     </section>
     <section>
-      <div class="p-faq">
-        <h1 class="c-headline__1">
+      <div class="p-faq ">
+        <h1 data-aos="zoom-in-up" data-aos-duration="2000" class="c-headline__1">
           よくある質問<span>FAQ</span>
         </h1>
-        <div class="p-faq__wrap">
+        <div data-aos="zoom-in-up" data-aos-duration="2000" class="p-faq__wrap">
           <dl class="p-faq__wrap__list">
             <dt class="c-faq__titile">デザインから一貫してお願いすることは可能でしょうか
 
             </dt>
-            <dd class="c-faq__text">ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。
+            <dd class="c-faq__text u-display">ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。
               ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。
             </dd>
           </dl>
@@ -234,11 +241,11 @@
       </div>
     </section>
     <section>
-      <div class="p-blog">
-        <h1 class="c-headline__1">
+      <div class="p-blog ">
+        <h1 data-aos="zoom-in-up" data-aos-duration="2000" class="c-headline__1">
           ブログ<span>BLOG</span>
         </h1>
-        <div class="p-blog__wrap">
+        <div data-aos="zoom-in-up" data-aos-duration="2000" class="p-blog__wrap">
           <div class="p-blog__box">
             <img class="c-blog__pictuer" src="./image/austin-distel-wawEfYdpkag-unsplash.png">
             <div class="c-blog__text">
@@ -278,11 +285,11 @@
 
       </div>
     </section>
-    <section class="p-works">
+    <section data-aos="zoom-in-up" data-aos-duration="2000" class="p-works">
       <h1 class="c-headline__1">
         制作実績<span>WORKS</span>
       </h1>
-      <div class="swiper-container">
+      <div class="p-swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="./image/digital-marketing-1.png" alt="">
             <h1>株式会社サンプル様採用サイトのコーデ<br>
@@ -334,52 +341,54 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
+
     </section>
-    <section class="p-contact">
-      <h1 1 class="c-headline__1 u-color">
+
+    <section class="p-contact" id="contact">
+      <h1 data-aos="zoom-in-up" data-aos-duration="2000" class="c-headline__1 u-color">
         お問い合わせ<span>CONTACT</span>
       </h1>
-      <p class="c-contact__text">
+      <p data-aos="zoom-in-up" data-aos-duration="2000" class="c-contact__text">
         コーディングの人出が足りないとき、<br>
         あなたの力になります
       </p>
-      <form class="p-contact__form">
+      <form id="form" data-aos="zoom-in-up" data-aos-duration="2000" class="p-contact__form"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLServDYwJs48NWDJLUSkbqCTSLVwdM2GEZq0yQtHFsdb5_MG8g/formResponse"
+        target="_self" method="POST" id="mG61Hd">
         <label>
           お名前
           <spam class="c-form__required">
             必須
           </spam>
-          <input type="text" name="name" class="c-form__input">
         </label>
+        <input id="name" type="text" class="c-form__input" required="required" name="entry.2005620554">
         <label>
           メールアドレス
           <spam class="c-form__required">
             必須
           </spam>
-          <input type="text" name="name" class="c-form__input">
+          <input id="mail" type="email" class="c-form__input" required="required" name="entry.1045781291">
         </label>
         <label>
           お問い合わせ
           <spam class="c-form__required">
             必須
           </spam>
-          <textarea name="name" class="c-form__input u-size"></textarea>
+          <textarea id="" class="c-form__input__textarea" name="entry.839337160"></textarea>
         </label>
         <label for="example-id" class="c-checkbox">
-          <div>
-            <input type="checkbox" id="example-id">
-          </div>
+
+          <input type="checkbox" id="privacyCheck" required="required" name="entry.947266199">
+
           プライバシーポリシーに同意する
         </label>
         <div class="p-contact__form__button">
+          <input type="submit" id="js-submit" class="p-contact__form__button c-button" value="送信する">
 
-          <button class="c-button">
-            <a href="#">
-              送信する
-            </a>
-          </button>
         </div>
 
+        <p class="c-end-message">お問い合わせありがとうございました</p>
+        <p class="c-false-message">送信失敗です</p>
 
       </form>
     </section>
@@ -402,9 +411,10 @@
     </p>
   </footer>
 
+
   <script src="swiper.js"></script>
   <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.p-swiper-container', {
       // 画像を繰り返す
       loop: true,
       spaceBetween: 20,
@@ -444,5 +454,14 @@
     });
   </script>
 
-</body>
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="./js/contact.js"></script>
 </body>

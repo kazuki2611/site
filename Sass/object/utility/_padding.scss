@@ -1,0 +1,5 @@
+.u-padding {
+  @include breakpoint(pc) {
+    padding: 0 84px 0 0;
+  }
+}

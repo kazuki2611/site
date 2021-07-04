@@ -22,294 +22,59 @@
 
 @import "object/project/prace";
 @import "object/project/table";
+@import "object/project/faq";
 
-.p-faq {
-  margin-top: 50px;
-  width: 100%;
-  h1 {
-    text-align: center;
-  }
-  &__wrap {
-    text-align: center;
-    width: 100%;
-    font-size: 14px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    &__list {
-      width: 80%;
-      margin: 0 auto;
-    }
-  }
-}
-.p-faq__wrap {
-  .c-faq__titile {
-    border: 1px solid #e5e5e5;
-    padding: 20px;
-    cursor: pointer;
-    display: block;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  .c-faq__text {
-    font-weight: bold;
-    border: 1px solid #e5e5e5;
-    padding: 20px;
-    background-color: #f2f2f2;
-    text-align: left;
-    display: none;
-    line-height: 1.8;
-  }
-}
-.p-blog {
-  width: 100%;
-  background-color: #eefbfb;
-  padding-bottom: 30px;
-  padding-top: 64px;
-  
-  h1 {
-    text-align: center;
-    color: #333333;
-  }
-  &__wrap {
-    @include breakpoint(pc) {
-      display: flex;
-      width: 90%;
-      margin: 0 auto;
-      max-width: 1227px;
-      margin-top: 55px;
-      padding-bottom: 91px;
-    }
-  }
-  &__box {
-    text-align: center;
+@import "object/component/faq__titile";
+@import "object/component/faq__text";
 
-    background-color: #fff;
-    width: 389px;
-    height: 100%;
-    margin: 30px auto 0 auto;
-    box-shadow: 0px 3px 6px #00000029;
-    @include breakpoint (tablet) {
-      width: 500px;
-    }
-    @include breakpoint(pc) {
-      margin: 0 10px;
-      width: 100%;
-    }
-  }
-}
-.c-blog__pictuer {
-  color: #333333;
-  height: 260px;
-  width: 100%;
-  object-fit: cover;
-  @include breakpoint (tablet) {
-    height: 350px;
-  }
-}
-.c-blog__text {
-  font-weight: bold;
-  margin: 0 auto;
-  color: #333333;
-  height: 127px;
-  width: 100%;
-  font-size: 14px;
-  text-align: left;
-  position: relative;
-  padding: 19px 30px 0 18px;
-  line-height: 1.4;
-  @include breakpoint (tablet) {
-    height: 150px;
-  }
-  @include breakpoint(pc) {
-    font-size: 18px;
-  }
-  time {
-    position: absolute;
-    top: 10%;
-    right: 10%;
-  }
-}
-.u-date {
-  text-align: initial;
-  padding-top: 10%;
-  padding-left: 70%;
-  padding-bottom: 50px;
-}
-.p-works {
-  h1 {
-    text-align: center;
-    @include breakpoint (pc) {
-      padding-top: 65px;
-    }
-  }
-  span {
-    padding-bottom: 69px;
-  }
-}
-.swiper-container {
-  width: 100%;
-  height: 500px;
 
-  .swiper-slide {
-    border: 1px solid #dddddd;
-    height: 403px;
-    box-sizing: border-box;
-    display: block;
-    width: 322px;
-    margin-right: 20px;
+@import "object/project/blog";
+@import "object/component/blog__pictuer";
+@import "object/component/blog__text";
 
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 0;
-    h1 {
-      padding-top: 23px;
-      font-size: 16px;
-      padding-left: 18px;
-      text-align: left;
-     color: #333333;
-    }
-    p {
-      padding-top: 32px;
-      padding-left: 18px;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 1.2;
-      color: #333333;
-    }
-    img {
-      object-fit: cover;
-      height: 200px;
-      width: 100%;
-    }
-  }
-}
-.p-contact {
-  background: linear-gradient(90deg, #05a5fa 0%, #63fbd7 100%);
-  width: 100%;
-  font-weight: bold;
-  padding-bottom: 30px;
+@import "object/utility/date";
 
-  h1 {
-    text-align: center;
-    padding-top: 72px;
-  }
-  span {
-    color: #fff;
-  }
-  &__form {
-    width: 90%;
-    max-width:908px ;
-    margin: 0 auto;
-    height: 100%;
-    background-color: #fff;
-    padding: 39px 63px 0 63px;
+@import "object/project/works";
 
-    &__button {
-      text-align: center;
-    }
-    .c-button {
-      padding: 10px 50px;
-      margin-top: 30px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-    }
-  }
-}
-.c-form__required {
-  color: #fff;
-  background-color: #0c449b;
-  font-size: 14px;
-  border-radius: 10px;
-  padding: 5px 16px;
-  margin-left: 20px;
-}
-.c-contact__text {
-  text-align: center;
-  color: #fff;
-  margin-top: 42px;
-  padding-bottom: 44px;
-}
-.u-color {
-  color: #fff;
-}
-label {
-  display: block;
-  margin-top: 25px;
-  color: #333333;
-  appearance: none;
-}
-.c-form__input {
-  padding: 0 10px;
-  border-radius: 3px;
-  width: 80%;
-  background-color: #eefbfb;
-  display: block;
-  height: 43px;
-  margin-top: 24px;
-}
-.u-size {
-  height: 179px;
-  width: 100%;
-}
-.c-checkbox {
-  display: flex;
-  justify-content: center;
-  color:#333333;
-  input {
-   
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #707070;
-    margin-right: 10px;
-  }
-}
-.l-footer {
-  width: 100%;
-  height: 100%;
-  padding: 30px;
-  color: #333333;
-  h1 {
-    font-size: 24px;
-    text-align: center;
-  }
-  ul {
-    font-weight: bold;
-    display: flex;
-    margin-top: 30px;
-    text-align: center;
-    justify-content: center;
-    font-size: 24px;
 
-    li {
-      font-size: 14px;
-      list-style: none;
-      padding-left: 20px;
-      @include breakpoint (pc) {
-        font-size: 16px;
-      }
-    }
-  }
-  p {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 14px;
-    color: #333333;
-  }
+
+
+@import "object/project/contact";
+@import "object/component/form__required";
+@import "object/component/contact__text";
+
+@import "object/utility/color";
+@import "object/utility/size";
+@import "object/utility/padding";
+
+
+@import "object/project/swiper-container";
+@import "object/component/checkbox";
+
+
+
+@import "object/component/form__input";
+@import "layout/footer";
+
+@import "object/utility/text";
+
+
+
+
+
+
+
+// .form-wrapper {
+//   width: 500px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+@import "object/component/end-message";
+@import "object/component/false-message";
+@import "object/utility/display";
+
+body {
+  overflow-x: hidden;
+
 }
-.l-header__wrap {
-  @include breakpoint(pc) {
-    align-items: center;
-    display: flex;
-    max-width: 1022px;
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-.u-text {
-  text-align: left;
-}
-.u-padding {
-  @include breakpoint(pc) {
-    padding: 0 84px 0 0;
-  }
-}
+
